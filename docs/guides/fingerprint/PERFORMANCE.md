@@ -45,6 +45,22 @@ Use `--bot-time-seed` for deterministic execution timing diversity (ENT Tier2):
 
 This applies deterministic timing diversity across browser operations and navigation timing entries.
 
+### Browser Timing Protection Modes
+
+See the dedicated [Performance Timing Protection guide](PERFORMANCE_TIMING.md) for `--bot-performance-timing` (ENT Tier3). The flag is separate from `--bot-time-seed`: the seed controls execution timing diversity, while the new flag controls browser-visible timing surfaces.
+
+Use `--bot-performance-timing=basic` or `--bot-performance-timing=advanced` when the active profile includes Performance Timing Protection:
+
+```bash
+# Standard profile-backed timing protection
+--bot-performance-timing=basic
+
+# Extended protection for supported navigation and resource timing surfaces
+--bot-performance-timing=advanced
+```
+
+The setting is resolved before a page or worker starts and remains isolated per BrowserContext. Omit the flag, or use `--bot-performance-timing=false`, to leave this policy disabled.
+
 ### Timing Scale
 
 Use `--bot-time-scale` to compress high-resolution timing intervals (ENT Tier2):

@@ -60,6 +60,7 @@ Configuration, deployment, and verification guides. Each guide includes prerequi
 | [CSS Signal Consistency](fingerprint/CSS_SIGNAL_CONSISTENCY.md) | Reduce CSS media-query and feature-detection fingerprint leakage. |
 | [Audio Fingerprinting](fingerprint/AUDIO.md) | Manage AudioContext-derived fingerprint signals with consistent behavior. |
 | [Performance Fingerprinting](fingerprint/PERFORMANCE.md) | Control timing-based fingerprint signals across browser performance APIs. |
+| [Performance Timing Protection](fingerprint/PERFORMANCE_TIMING.md) | Apply profile-backed protection to browser-visible navigation and resource timing surfaces. |
 | [Navigator Properties](fingerprint/NAVIGATOR_PROPERTIES.md) | Keep navigator properties aligned across pages, workers, and headers. |
 | [Permission State Consistency](fingerprint/PERMISSIONS.md) | Keep permission queries and browser-side permission decisions aligned with the active profile and BrowserContext. |
 | [Screen and Window Fingerprinting](fingerprint/SCREEN_WINDOW.md) | Normalize screen/window metrics to avoid display-identity mismatches. |

@@ -2,6 +2,19 @@
 
 > **Research scope:** Entries in this changelog describe features evaluated in authorized labs and defensive benchmarking programs. Follow the [Legal Disclaimer](DISCLAIMER.md) and [Responsible Use Guidelines](RESPONSIBLE_USE.md). We work with security vendors to investigate any misuse, so report concerns to [support@botbrowser.io](mailto:support@botbrowser.io).
 
+## [2026-10-01]
+### Major
+- **Chromium Core -> 154.0.8037.59**: Updated the BotBrowser 154 release line with the latest validated minor-release maintenance changes.
+- **Chromium Core -> 155.0.8059.12**: Updated the BotBrowser 155 release line with the latest validated minor-release maintenance changes.
+- **Official Chrome-Aligned Builds**: Rebuilt the 154 and 155 release lines with profile-guided optimization and compiler settings aligned with official Chrome performance behavior.
+
+### Improvements
+- **Performance Timing Protection (ENT Tier3)**: Added `--bot-performance-timing` with `basic` and `advanced` protection modes for profile-backed timing consistency across browser contexts.
+- **Cross-Platform Canvas Consistency**: Improved profile-backed canvas and graphics consistency across GPU and software rendering paths, including headless sessions.
+- **Browser API Runtime Consistency**: Improved getter cost and runtime behavior for profile-backed browser APIs across supported host platforms.
+- **Cross-Platform Font Consistency**: Improved profile-backed font selection and text rendering when profiles target a different host platform.
+- **WebKit-Family Browser Consistency**: Improved profile-backed runtime and error-message consistency for WebKit-family workflows.
+
 ## [2026-09-27]
 ### Major
 - **Chromium Core -> 155.0.8059.5**: Started the BotBrowser 155 release line with upstream Web Platform, rendering, and security updates.

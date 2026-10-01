@@ -172,7 +172,7 @@ Product overview, engineering design, FAQ: [TRIMMED_BUILD.md](TRIMMED_BUILD.md).
 | AudioContext noise calibration | [Multi-Layer Noise](ADVANCED_FEATURES.md#multi-layer-fingerprint-noise) | [Guide](docs/guides/fingerprint/AUDIO.md) |
 | Text metrics & ClientRects noise | [Multi-Layer Noise](ADVANCED_FEATURES.md#multi-layer-fingerprint-noise) | [Guide](docs/guides/fingerprint/FONT.md) |
 | Deterministic noise seeds (reproducible per-tenant) | [--bot-noise-seed](CLI_FLAGS.md#flag-bot-noise-seed) | [Guide](docs/guides/fingerprint/NOISE_SEED_REPRODUCIBILITY.md) |
-| Performance timing protection (27 browser operations) | [Performance Timing Protection](ADVANCED_FEATURES.md#performance-timing-protection) | [Guide](docs/guides/fingerprint/PERFORMANCE.md) |
+| Performance timing protection (27 browser operations) | [Performance Timing Protection](ADVANCED_FEATURES.md#performance-timing-protection) | [Guide](docs/guides/fingerprint/PERFORMANCE_TIMING.md) |
 | Video FPS control for media workloads | [--bot-video-fps](CLI_FLAGS.md#flag-bot-video-fps) | [Guide](docs/guides/fingerprint/FPS_CONTROL.md#video-fps-control) |
 | Stack depth fingerprint control (main/Worker/WASM) | [Stack Depth Control](ADVANCED_FEATURES.md#stack-depth-control) | [Guide](docs/guides/fingerprint/STACK_DEPTH.md) |
 | Memory and storage quota control | [--bot-js-heap-size-limit / --bot-storage-quota](CLI_FLAGS.md#flag-bot-js-heap-size-limit) | [Guide](docs/guides/fingerprint/STORAGE_QUOTA.md#runtime-overrides) |

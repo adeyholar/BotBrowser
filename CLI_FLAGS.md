@@ -138,6 +138,7 @@ Each entry shows availability and the primary guide. The guide documents startup
 - [`--bot-storage-quota`](#flag-bot-storage-quota) (Core): [Storage and Memory](docs/guides/fingerprint/STORAGE_QUOTA.md)
 - [`--bot-time-scale`](#flag-bot-time-scale) (ENT Tier2): [Performance Fingerprinting](docs/guides/fingerprint/PERFORMANCE.md)
 - [`--bot-time-seed`](#flag-bot-time-seed) (ENT Tier2): [Performance Fingerprinting](docs/guides/fingerprint/PERFORMANCE.md)
+- [`--bot-performance-timing`](#flag-bot-performance-timing) (ENT Tier3): [Performance Timing Protection](docs/guides/fingerprint/PERFORMANCE_TIMING.md)
 - [`--bot-stack-seed`](#flag-bot-stack-seed) (ENT Tier2): [Stack Depth](docs/guides/fingerprint/STACK_DEPTH.md)
 - [`--bot-network-info-override`](#flag-bot-network-info-override) (Core): [Navigator Properties](docs/guides/fingerprint/NAVIGATOR_PROPERTIES.md)
 - [`--bot-gpu-emulation`](#flag-bot-gpu-emulation) (ENT Tier2): [Linux GPU Backend](docs/guides/deployment/LINUX_GPU_BACKEND.md#gpu-emulation-modes)
@@ -834,6 +835,8 @@ Runtime toggles that don’t rely on profile `configs` but still override behavi
 - `--bot-time-scale` (ENT Tier2): Float below `1.0` for timing scale policy. Guide: [Performance Fingerprinting](docs/guides/fingerprint/PERFORMANCE.md).
 <a id="flag-bot-time-seed"></a>
 - `--bot-time-seed` (ENT Tier2): Integer seed (1-UINT32_MAX) for reproducible execution timing policy. `0` disables the feature. Guide: [Performance Fingerprinting](docs/guides/fingerprint/PERFORMANCE.md).
+<a id="flag-bot-performance-timing"></a>
+- `--bot-performance-timing[=basic|advanced]` (ENT Tier3): Apply profile-backed protection to browser-visible network and navigation timing. A bare flag or `basic` enables the standard policy; `advanced` enables the extended policy. Omit the flag or use `false` to keep the feature disabled. Guide: [Performance Timing Protection](docs/guides/fingerprint/PERFORMANCE_TIMING.md).
 <a id="flag-bot-stack-seed"></a>
 - `--bot-stack-seed` (ENT Tier2): Use `profile`, `real`, or a positive integer seed for stack depth policy across main thread, Worker, and WASM contexts. Guide: [Stack Depth](docs/guides/fingerprint/STACK_DEPTH.md).
 <a id="--bot-network-info-override"></a>
