@@ -128,3 +128,7 @@ Page translation sends the text needed by the translation service to Google's se
 - [Profile Management](PROFILE_MANAGEMENT.md) - choose and launch a matching profile.
 - [Proxy Configuration](../network/PROXY_CONFIGURATION.md) - configure browser-level proxy routing.
 - [First Verification](FIRST_VERIFICATION.md) - verify a new BotBrowser launch.
+
+---
+
+**Related BotBrowser blog:** [Botbrowser Launcher Guide](https://botbrowser.io/en/blog/botbrowser-launcher-guide/)

@@ -1,5 +1,10 @@
 # BotBrowser Guides
 
+Every guide should end with a contextually relevant link to one public BotBrowser
+blog article. Run `node scripts/sync-guide-blog-links.mjs` after adding a guide;
+run it with `--check` in CI or before committing. The link is a supplementary
+research path and does not replace the operational instructions in this guide.
+
 Configuration, deployment, and verification guides. Each guide includes prerequisites, examples, and troubleshooting.
 
 ---
